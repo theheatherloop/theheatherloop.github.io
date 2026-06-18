@@ -681,21 +681,31 @@ a:hover {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    flex-direction: column;
-    gap: 0.75rem;
     z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
     background: var(--maroon);
-    padding: 0.8rem;
-    border-radius: 12px;
+    padding: 0.65rem 0.55rem;
+    border-radius: 14px;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(242, 216, 167, 0.15);
 }
 
-.floating-social img {
-    width: 26px;
-    height: 26px;
+.floating-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
 }
 
+.floating-social img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
 /* =========================================
    Responsive
    ========================================= */
